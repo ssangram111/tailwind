@@ -109,7 +109,6 @@ const Profile = () => {
                 className="border border-gray-400 py-1 px-2 bg-black rounded-md w-full"
               />
             </div>
-            <div className="grid grid-cols-2 gap-5 mt-3 ">
               <div className="flex flex-col">
                 <label>Role</label>
                 <input
@@ -127,7 +126,6 @@ const Profile = () => {
                   className="border border-gray-400 py-1 px-2 bg-black rounded-md w-full"
                 />
               </div>
-            </div>
             <div className="flex flex-col mt-3">
               <label>Description</label>
               <input

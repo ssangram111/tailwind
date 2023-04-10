@@ -8,8 +8,8 @@ const Layout = ({children}) => {
     <Header/>
     <main className="flex bg-black text-white h-screen w-screen overflow-hidden">
       <Sidebar />
-      <div className="">
-        <div>{children}</div>
+      <div className="flex flex-col flex-1">
+        <div className="flex-1  min-h-0 overflow-auto">{children}</div>
       </div>
     </main>
     </>
