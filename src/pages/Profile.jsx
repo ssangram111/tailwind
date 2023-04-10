@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/shared/Layout";
-
+import {AiFillEdit} from "react-icons/ai"
 const Profile = () => {
   return (
     <Layout>
@@ -8,13 +8,14 @@ const Profile = () => {
       <div className="flex justify-end items-end gap-5 m-5">
         <button
           type="submit"
-          className="h-12 w-28 rounded-full border-2 font-extrabold text-1xl bg-neutral-300 p-2"
+          className="h-12 flex justify-center w-28 pt-3 text-black rounded-full font-extrabold text-1xl bg-gray-700 p-2"
         >
+          <AiFillEdit className="mr-1 text-2xl"/>
           Edit
         </button>
         <button
           type="submit"
-          className="h-12 w-28 rounded-full border-2 font-extrabold text-1xl bg-rose-500 p-2"
+          className="h-12 w-28 text-black rounded-full border-1 font-extrabold text-1xl bg-orange-400 p-2"
         >
           Save
         </button>
@@ -22,13 +23,20 @@ const Profile = () => {
 
       <div className="bg-black">
         <div className="flex justify-between ps-5 sm:ps-20 pe-5 sm:pe-20"></div>
-        <div className="flex items-center justify-center">
+
+
+        <div className="relative mx-auto w-32 flex items-center justify-center">
           <img
             src="https://source.unsplash.com/80x80?face"
             alt="profile"
-            className="rounded-full w-32 h-32"
+            className=" rounded-full w-32 h-32"
           />
+
+            <AiFillEdit className="absolute bottom-2 rounded-full bg-orange-400 p-1 text-3xl text-white right-2"  />
+
         </div>
+
+
         <div>
           <form className="text-white mt-2 ps-5 sm:ps-20 pe-5 sm:pe-20 p-5">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 ">

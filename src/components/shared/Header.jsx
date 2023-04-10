@@ -1,16 +1,21 @@
 import React from "react";
 import { FcShop } from "react-icons/fc";
+import { BsFillBellFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <div className="flex-1 py-4 flex flex-row gap-3 bg-black text-white justify-between">
       <div className="flex items-center gap-2 px-4 py-3">
-        <FcShop fontSize={24}  />
+        <FcShop fontSize={24} />
         <span className="text-neutral-100 text-lg">Open Shops </span>
       </div>
 
       <div className="flex gap-3 p-3">
+        <Link to={'/'} 
+        className="flex items-center gap-2 font-light px-3 py-2 hover:bg-neutral-700 hover:no-underline active:bg-neutral-600 rounded-sm text-base">
+          <BsFillBellFill fontSize={24} />
+        </Link>
         <Link
           to={"/"}
           className="flex items-center gap-2 font-light px-3 py-2 hover:bg-neutral-700 hover:no-underline active:bg-neutral-600 rounded-sm text-base"
